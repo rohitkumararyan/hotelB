@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <meta charset="utf-8">
+            <title>HOTEL GP</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="style.css">
+            <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+            <link rel = "icon" href = "images/logo.png" type = "image/png">
+            <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header" id="header">
+             <div class="head-top">
+                <div class="site-name">
+                    <span>H.Booking <i class="fas fa-location.png"></i></span>
+                </div>
+                <div class="site-nav">
+                    <span id="nav-btn">MANU<i class="fas fa-bars"></i></span>
+                </div>
+            </div>
+            <div class="head-bottom flex">
+                <h2>NICE AND COMFORTABLE PLACE TO STAY </h2>
+                <P>"Every hotel in our Collection was invited to join us
+                    because they represent the quintessence of luxury.</P>
+                <button type="button" class="head-btn">GET STARTED</button>
+            </div>
+        </header>
+          <!-- end of header -->
+
+         
+        <div class="sidenav" id ="sidenav">
+                <span class="cancel-btn" id="cancel-btn">
+                     <i class="fas fa-times"></i>
+                </span>
+
+
+                <ul class="navbar">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Service</a></li>
+                  <li><a href="#">Rooms</a></li>
+                  <li><a href="#">Customer</a></li>
+               </ul>
+                <button class="btn sign-up" onclick="open">Sing Up</button>
+                <button class="btn log-in">Log in</button>
+            </div>
+           <!-- fullscreen modal -->
+        <div id="modal"></div>
+
+          
+        <section class="Service sec-width" id="services">
+            <div class="title">
+                <h2>Service</h2>
+            </div>
+            <div class="services-container">
+                <article class="service">
+                    <div class="service-icon">
+                        <span>
+                            <i class="fas fa-utensils"></i>
+                        </span>
+
+                    </div>
+                    <div class="service-content">
+                      <h2>Food Service/food Runner</h2>
+                      <p>A Food Runner is a professional who is responsible for quickly and accurately delivering orders from the kitchen to customers at the restaurant. They help Waiters and Waitresses maintain a clean environment for restaurant patrons throughout the dining experience</p>
+                      <button type="button" class="btn">
+                        <a href="https://www.tajhotels.com/en-in/taj/taj-mahal-palace-mumbai/">Know More</a>
+                      </button> 
+                    </div>
+                </article>
+
+                <article class="service">
+                    <div class="service-icon">
+                        <span>
+                            <i class="fas fa-swimming-pool"></i>
+                        </span>
+
+                    </div>
+                    <div class="service-content">
+                      <h2>Refreshment</h2>
+                      <p>Revel in the Legendary Hospitality of the Taj Recognised For Its Warm & Intuitive Service. Experience An Unrivalled Fusion of Indian Hospitality, World-Class Service & Modern Luxury. Award Winning Hospitality. Flexible Cancellations. Clean And Safe Rooms.</p>
+                      <button type="button" class="btn">
+                        <a href="https://www.tajhotels.com/en-in/destination/hotels-in-mumbai/">Know More</a>
+                        </button> 
+                    </div>
+                </article>
+
+                <article class="service">
+                    <div class="service-icon">
+                        <span>
+                            <i class="fas fa-broom"></i>
+                        </span>
+
+                    </div>
+                    <div class="service-content">
+                      <h2>Housekeeping</h2>
+                      <p>Housekeeping refers to the management of duties and chores involved in the running of a household, such as cleaning, cooking, home maintenance, shopping, and bill payment. These tasks may be performed by members of the household, or by other persons hired for the purpose.</p>
+                      <button type="button" class="btn">
+                        <a href="https://www.tajhotels.com/en-in/restaurants/">Know More</a>
+                      </button> 
+                    </div>
+                </article>
+
+                <article class="service">
+                    <div class="service-icon">
+                        <span>
+                            <i class="fas fa-door-closed"></i>
+                        </span>
+
+                    </div>
+                    <div class="service-content">
+                      <h2>Room Security</h2>
+                      <p>The official told that Mumbai police are on high alert after Monday's Karachi exchange terror attack and as part of the enhanced anti-terror measures, security outside the hotel and other vital installations has been
+                      <button type="button" class="btn">
+                        <a href="https://www.socialvillage.in/resources/24126-facilities-services-taj-hotel-mumbai">Know More</a>
+                      </button> 
+                    </div>
+                </article> 
+            </div>
+        </section>
+
+        <!--end service-->
+
+        <div class="book" id="bookForm">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit"  id ="submit" class = "btn" value = "Book Now">
+                </div>
+            </form> 
+               
+        </div>
+    
+        <!--bookingEnd-->
+        <section classs= "rooms sec-width" id= "rooms">
+            <div class="title">
+                <h2>Rooms</h2>
+            </div>
+            <div class= "rooms-container">
+                <article class="room">
+                    <div class ="room-image">
+                        <img src="image/rroom.jpeg" alt="room image">
+                    </div>
+                    <div class="room-text">
+                        <h3>Luxury Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                size:-72 Sq Mt 
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                SIGNATURE FEATURE
+                                Located on the 8th, 9thand 10th Floor on the hotel.
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Occupancy Details: 
+                                Up to 3 guests. Max Adults: 3, Max Children: 1
+                            </li>
+                        </ul>
+                        <p>When you enter the Luxury Room, the paintings on the walls catch your eye. Each one telling you a glorious chapter of the city of joy. Located on the 8th, 9th and 10th floors of the hotel, it’s a perfect choice to unwind from the city chaos. Designed with elegant interiors and state-of-the-art amenities,
+                            let us pamper you like you’ve never felt before.</p>
+                        <p>>minibar
+                            Tea/Coffee maker
+                            Private pool and Jacuzzi
+                            Flat-screen Smart HD TV
+                            Complimentary Wi-Fi for upto 4 devices per room (Standard plan)</p>
+                        <p class="rate">
+                            <span>₹ 24,750 /</span>per Night
+                        </p>
+                        <button type="button" class="btn">
+                            <a href="https://www.tajhotels.com/en-in/offers/book-direct/">Know More</a>
+                        </button>
+                        
+                    </div>
+                </article>
+
+                <article class="room">
+                    <div class ="room-image">
+                        <img src="image/room.jpg">
+                    </div>
+                    <div class="room-text">
+                        <h2>Deluxe Suite</h2>
+                        <ul>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                size:-32 Sq Mt
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Up to 2 guests. Max Adults: 2, Max Children: 1
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Located on 4th, 6th and 7th Floor of the hotel
+                            </li>
+                        </ul>
+                        <p>Designed to help you unwind smoothly, the Deluxe Room is charming and elegant. Unwind between the wooden-themed interiors and world-class amenities while 
+                            the walls boast authentic paintings by local artists of Kolkata to pamper you artistically</p>
+                        <p>Enjoy a blissful sojourn in our Deluxe Suites, where indigenous paintings adorn the room's ambience with a vintage vibe.
+                             A delightful day awaits with cherished conversations with your loved ones.</p>
+    
+                        <p class="rate">
+                            <span>₹ 22,750 /</span>per Night
+                        </p>
+                        <button type="button" class="btn">
+                            <a href="https://www.tajhotels.com/en-in/taj/taj-city-centre-kolkata/">Know more</a>
+                        </button>   
+                    
+                    </div>
+                </article>
+
+                <article class="room">
+                    <div class ="room-image">
+                        <img src="image/cluberoom.jpeg">
+                    </div>
+                    <div class="room-text">
+                        <h2>Taj Club Room</h2>
+                        <ul>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                size:  72 Sq Mt
+                                
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Up to 2 guests. Max Adults: 2, Max Children: 1.
+                            </li>
+                            <li>
+                                <i class="fas fa-arrow-alt-circle-right"></i>
+                                Located on the Club floor with Club Facilities.
+                            </li>
+                        </ul>
+                        <p>Located on the Club Floor, the Taj Club Room is a special escapade designed for you. The paintings on the wall, spacious rooms, 
+                            charming interiors, and the state-of-the-art amenities invite you to let relaxation take over.</p>
+                        <p>minibar
+                        Tea/Coffee maker
+                        Private pool and Jacuzzi
+                        Flat-screen Smart HD TV
+                        Complimentary Wi-Fi for upto 4 devices per room (Standard plan)</p>
+            
+                        <p class="rate">
+                            <span>₹ 22,750/</span>per Night
+                        </p>
+                        <button type="button" class="btn">
+                            <a href="https://www.tajhotels.com/en-in/offers/suite-surprises">Know more</a>
+                        </button>
+                        
+                    
+                    </div>
+                </article>
+                <!--end rooms section-->    
+              </div>
+            </section>
+          <!--customer feedfack-->
+            <section class="customers" id="customers">
+            <div class="sec-width">
+                <div class="title">
+                    <h2>Customers</h2>
+                </div>
+                <div class="customers-container">
+                    <div class="customer">
+                        <div class="rating">
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                            <span><i class="fas fa-star"></i></span>
+                        </div>
+                        <h3>Woh Taj</h3>
+                        <p>Superb hotel with great service. The check-in was very smooth. We got upgraded to Palace, the 115 year old building is quite amazing. The whole property is well </p>
+                        <img src="image/customer.jpg">
+                        <span>Priya sharma,India</span>
+                    </div>
+                
+                 
+    
+                  <div class="customer">
+                       <div class="rating">
+                           <span><i class="fas fa-star"></i></span>
+                           <span><i class="fas fa-star"></i></span>
+                           <span><i class="fas fa-star"></i></span>
+                           <span><i class="fas fa-star"></i></span>
+                           <span><i class="fas fa-star"></i></span>
+                        </div>
+                         <h3>Comfortable living</h3>
+                         <p>We like the overall hospitality experience. The Staff was too good. The Building is Iconic and we loved the way it is kept. Breakfast spread was good and .</p>
+                         <img src="image/maner3.jpg">
+                         <span>Mr.Kuldeep kaur,punjab</span>
+                    </div>
+    
+                  <div class="customer">
+                        <div class="rating">
+                           <span><i class="fas fa-star"></i></span>
+                           <span><i class="fas fa-star"></i></span>
+                           <span><i class="fas fa-star"></i></span>
+                           <span><i class="fas fa-star"></i></span>
+                           <span><i class="fas fa-star"></i></span>
+                       </div>
+                        <h3>Lovely place</h3>
+                         <p>“It was a pleasant and memorable stay. The staff was excellent and were ever willing to assist.” ... Love the location . ... Amazing- Staff went Above and beyond,</p>
+                          <img src="image/mager1.jpg">
+                        <span>Manager, in taj</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+          <!--footer start-->
+          <footer class="footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About us</h2>
+                    <p>Opposite the Arabian Sea, this luxury hotel is a 6-minute walk from the Gateway of India and 3 km from the bustling Marine Drive.
+                        The refined rooms come with free Wi-Fi, flat-screens and turndown service. Club-level rooms add butler service, marble bathrooms and access to a private lounge serving drinks and appetizers. 
+                        Suites add living rooms, and the presidential suite provides a spa and a fitness room.</p>
+                    <ul class="social-icons">
+                        <li class="icon">
+                            <a href="https://www.linkedin.com/in/rohit-kumar-abb351170"
+                              ><img
+                                src="/image/linkdin-removebg-preview.png"
+                                alt="LinkedIn"
+                            /></a>
+                          </li>
+                          <li class="icon">
+                            <a href="https://github.com/rohitkumararyan"
+                              ><img
+                                src="/image/github-removebg-preview (2).png"
+                                alt="GitHub"
+                            /></a>
+                          </li>
+                          <li class="icon">
+                            <a href="https://www.instagram.com/rohitkumar.aryan.357/"
+                              ><img
+                                src="image/instragram-removebg-preview.png"
+                                alt="Instagram"
+                            /></a>
+                          </li>
+                    </ul>
+                </div> 
+    
+                <div>
+                    <h2>Useful links</h2>
+                    <a href = "https://www.tajhotels.com/en-in/taj/taj-mahal-palace-mumbai/image-gallery/">gallery</a>
+                    <a href = "https://www.tajhotels.com/en-in/taj/taj-mahal-palace-mumbai/rooms-and-suites/">Rooms</a>
+                    <a href = "https://www.tajhotels.com/en-in/taj/taj-mahal-palace-mumbai/offers-and-promotions/">offer</a>
+                    <a href = "https://tajhotels.woohoo.in/e-gift-card">Gift Card</a>
+                    <a href = "https://www.tajhotels.com/en-in/newsletter/">subcription</a>
+                    <a href = "https://www.tajhotels.com/en-in/blog/">Blog</a>
+                    
+                </div>
+    
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "https://www.ihcltata.com/careers/">Career</a>
+                    <a href = "https://www.tajhotels.com/en-in/taj/taj-mahal-palace-mumbai/?utm_medium=Local&utm_source=Google&utm_campaign=The-Taj-Mahal-Palace-Mumbai">About Us</a>
+                    <a href = "https://www.tajhotels.com/en-in/about-us/contact-us/reservations/">Contact Us</a>
+                </div>
+    
+                <div>
+                    <h2>Have you Any Question</h2>
+                    <div class ="contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            Apollo Bandar, Colaba, Mumbai, Maharashtra 400001
+                        </span>
+                    </div>
+    
+                    <div class ="contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                             8404921368,7909028502
+                        </span>
+                    </div>
+    
+                    <div class ="contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            rkaryan256998@gmail.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+          </footer>
+
+           <script src="file.js"></script>
+    </body>
+</html>
